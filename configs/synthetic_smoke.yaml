@@ -1,0 +1,13 @@
+# Offline smoke test on the templated synthetic corpus (NOT a real benchmark)
+base: tiny.yaml
+model: {vocab_size: 400, max_position_embeddings: 64}
+data: {dataset: synthetic, max_seq_length: 64, data_dir: data/processed_synth, tokenizer_dir: data/tokenizer_synth}
+training:
+  batch_size: 16
+  gradient_accumulation_steps: 1
+  max_steps: 300
+  warmup_steps: 20
+  eval_every: 100
+  save_every: 100
+  log_every: 20
+  experiment_name: synthetic_smoke

@@ -1,0 +1,4 @@
+base: ../small.yaml
+model: {max_position_embeddings: 128}
+data: {max_seq_length: 128}
+training: {experiment_name: ctx128}

@@ -1,0 +1,3 @@
+base: ../small.yaml
+nsp: {enabled: false}
+training: {experiment_name: mlm_only}

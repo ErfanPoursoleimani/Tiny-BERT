@@ -1,0 +1,2 @@
+base: ../small.yaml
+training: {learning_rate: 1.0e-4, experiment_name: lr1e-4}

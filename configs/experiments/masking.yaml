@@ -1,0 +1,3 @@
+base: ../small.yaml
+mlm: {probability: 0.20}
+training: {experiment_name: mask20}

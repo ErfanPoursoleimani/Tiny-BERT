@@ -1,0 +1,47 @@
+[
+ {
+  "precision": "fp32",
+  "attention": "manual",
+  "grad_ckpt": false,
+  "batch": 8,
+  "seq": 64,
+  "params": 1907152,
+  "fwd_ms": 34.95739600000055,
+  "bwd_ms": 28.89661399998052,
+  "tokens_per_sec": 8018.290472284384,
+  "samples_per_sec": 125.2857886294435,
+  "inference_ms(batch=1)": 3.1488559999957033,
+  "peak_vram_mb": 0.0,
+  "cpu_ram_mb": 563.7109375
+ },
+ {
+  "precision": "fp32",
+  "attention": "sdpa",
+  "grad_ckpt": false,
+  "batch": 8,
+  "seq": 64,
+  "params": 1907152,
+  "fwd_ms": 29.119562666664933,
+  "bwd_ms": 30.573576666673336,
+  "tokens_per_sec": 8577.200088956472,
+  "samples_per_sec": 134.01875138994487,
+  "inference_ms(batch=1)": 2.930336999990383,
+  "peak_vram_mb": 0.0,
+  "cpu_ram_mb": 563.78515625
+ },
+ {
+  "precision": "fp32",
+  "attention": "sdpa",
+  "grad_ckpt": true,
+  "batch": 8,
+  "seq": 64,
+  "params": 1907152,
+  "fwd_ms": 29.126277666667495,
+  "bwd_ms": 59.920418666649766,
+  "tokens_per_sec": 5749.792199853154,
+  "samples_per_sec": 89.84050312270553,
+  "inference_ms(batch=1)": 2.8927006666776833,
+  "peak_vram_mb": 0.0,
+  "cpu_ram_mb": 676.71484375
+ }
+]

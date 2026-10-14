@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+*.egg-info/
+checkpoints/*.pt
+data/raw/*
+data/processed/*
+outputs/runs/
+.venv-gpu/
+.venv/

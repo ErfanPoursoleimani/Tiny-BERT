@@ -1,0 +1,13 @@
+model:
+  vocab_size: 30000
+  hidden_size: 512
+  num_hidden_layers: 8
+  num_attention_heads: 8
+  intermediate_size: 2048
+  max_position_embeddings: 256
+data: {dataset: wikitext-2, max_seq_length: 256}
+training:
+  batch_size: 2
+  gradient_accumulation_steps: 16
+  gradient_checkpointing: true
+  experiment_name: medium
